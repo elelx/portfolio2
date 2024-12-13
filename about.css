@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jolly+Lodger&display=swap');
+
+
+#ALLABOUTME {
+
+    font-size: 20px;
+    text-align: center; 
+
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+
+
+    color: white;
+}
+body, html {
+
+height: 100%; 
+margin: 0;
+background-image: url('img/bg2.jpg'); 
+background-size: cover;
+background-position: center center;
+
+}
+
+#title{
+    position: fixed; 
+    top: 10%; 
+    left: 50%;
+    transform: translate(-50%, -30%);
+    z-index: 2; 
+    width: 800px; 
+    height: auto; 
+    border-radius: 50%; 
+}
+
+#pic{
+    position: fixed; 
+    top: 40%; 
+    left: 35%;
+    transform: translate(-50%, -30%);
+    z-index: 2; 
+    height: auto; 
+    border-radius: 50%; 
+}
+
+#ALLABOUTME{
+    position: fixed; 
+    top: 45%; 
+    left: 72%;
+    transform: translate(-50%, -30%);
+    z-index: 2; 
+    width: 800px; 
+    height: auto; 
+    border-radius: 50%; 
+    pointer-events: none; 
+  text-align: left ;
+  color:rgb(0, 132, 255);
+}
+
+#goback{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 49%; 
+    opacity: 100; 
+}
+
+#rectangle{
+    width:70%;
+    height:30%;
+    background:rgb(255, 255, 255);
+    position:absolute;
+    top:35%;
+    left: 15%;
+}

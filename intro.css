@@ -1,0 +1,125 @@
+body, html {
+    height: 100%; 
+    margin: 0;
+    background-image: url('img/BACKGROUND.jpg'); 
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#sketchbox {
+    position: relative;
+    width: 100%; 
+    height: auto; 
+}
+
+#overlap {
+    display: flex;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30%; 
+    z-index: 10;
+    opacity: 100; 
+    pointer-events: auto;
+}
+
+#overlap:hover {
+    transform: translate(-50%, -10%) scale(1.2);
+}
+
+#botOverLap {
+    display: flex;
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30%; 
+    z-index: 10;
+    opacity: 100; 
+    pointer-events: auto;
+}
+
+#botOverLap:hover {
+    transform: translate(-50%, 10%) scale(1.2);
+} 
+
+#pencil {
+    display: flex;
+    position: absolute;
+    top: 15%;
+    left: 28%;
+    transform: translate(-50%);
+    width: 19%; 
+    z-index: 10;
+    pointer-events: auto;
+
+}
+
+#pencil:hover {
+    transform: translate(-50%, 10%) scale(1.2);
+} 
+
+#dino {
+    position: absolute; 
+    top: 50%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 20%; 
+    z-index: 10; 
+    transition: opacity 0.3s ease; 
+}
+
+#dino:hover {
+    opacity: 0; 
+    pointer-events: none;
+}
+
+#enter {
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 76%; 
+    transform: translateX(-50%);
+    width: 15%; 
+    z-index: 10;
+    opacity: 100; 
+    pointer-events: auto; 
+}
+
+#enter:hover {
+    transform: translate(-50%, -5%) scale(1.2);
+}
+
+
+@media (max-width: 768px) {
+    #sketchbox {
+        width: 80%;
+    }
+
+    #overlap, #botOverLap {
+        width: 80%; 
+    }
+
+    #pencil {
+        left: 13%;
+        top: 35%;
+        width: 20%;
+    }
+
+    #dino {
+        width: 40%; 
+    }
+
+    #enter {
+        left: 95%;
+        top: 45%;
+        width: 10%; 
+    }
+}
