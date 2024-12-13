@@ -24,7 +24,7 @@ body, html {
     top: 5%;
     left: 50%;
     transform: translate(-50%);
-    width: 30%; 
+    width: 40%; 
     z-index: 10;
     opacity: 100; 
     pointer-events: auto;
