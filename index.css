@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jolly+Lodger&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body, html {
+    height: 100%; 
+    margin: 0;
+    background-image: url('img/HowToTest3 copy.jpg'); 
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.container {
+    height: 100%; 
+    width: 100%;
+    position: relative; 
+}
+
+.text1 {
+    border-radius: 25px;
+
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 50px;
+    text-align: center; 
+
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: rgb(255, 89, 114);
+    width: 750px;
+    padding: 50px;
+    margin: 2px;
+
+    border: 15px solid white;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    
+}
+
+#menu{
+
+    color: white !important;
+
+    border-radius: 25px;
+
+    background-color: rgb(255, 213, 0);
+    width: 500px;
+    border: 10px solid white;
+    padding: 30px;
+    margin: 2px;
+
+}
+
+#menu div {
+    color: white;
+    flex-grow: 1;
+}
+
+#menu a {
+    color: white; 
+    text-decoration: none; 
+}
+
+#menu a:hover {
+    color: rgb(255, 61, 93); 
+    text-decoration: underline; 
+}
+  
+#heh{
+    font-size:25px;
+}
+
+.overlapimg {
+    position: fixed; 
+    top: 50%; 
+    left: 25%;
+    transform: translate(-50%, -30%);
+    z-index: 2; 
+    width: 400px; 
+    height: auto; 
+    border-radius: 50%; 
+    pointer-events: auto; 
+}
+
+.overlapimg:hover {
+    transform: translate(-50%, -50%) scale(1.1);}
+
+#kewl a {
+    color : white !important;
+    font-size: 20px
+}
+
+#kewl a:hover {
+    color: white;
+
+    transform: translate(-50%, -50%) scale(1.1);
+}

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jolly+Lodger&display=swap');
+
+#text1 {
+    font-size: 20px;
+color: white;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+
+}
+
+#title{
+    font-size: 40px;
+    letter-spacing: 2px;
+
+}
+
+
+
+body, html {
+    height: 100%; 
+    margin: 0;
+    background-image: url('img/bg4.jpg'); 
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#sketchbox {
+
+    display: block;
+    width: 600px;
+    height: 600px;
+    margin: 20px auto;
+position: center;
+  
+}
