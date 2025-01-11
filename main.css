@@ -86,14 +86,14 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 23px;
+    font-size: 25px;
     font-family: "Jersey 10", serif, sans-serif;
     letter-spacing: 2px;
     transition: font-size 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    font-size: 25px;
+    font-size: 30px;
     color: pink;
 }
 
@@ -120,10 +120,9 @@ nav ul li a:hover {
 }
 
 .name-image{
-    width: 70%;
+    width: 90%;
     height: auto;
     position: relative;
-
     margin: 10px 0;
     position: relative;
 
@@ -131,7 +130,7 @@ nav ul li a:hover {
 }
 .mouse-image {
 
-        width: 85%;
+        width: 90%;
         position: relative;
          top: -80px;
     margin-bottom: -150px;
@@ -439,9 +438,11 @@ letter-spacing: 4px;
        margin-bottom: 20%;
        margin-top: -24%;
     }
-
-
 }
+
+/*-line-*/
+
+  
 /*---portfolio ----*/
 #portfolio {
     padding: 50px 0;
@@ -461,7 +462,7 @@ letter-spacing: 4px;
     display: flex; /* Use Flexbox for child alignment */
     justify-content: center; /* Centers the content */
     flex-wrap: wrap; /* Allows wrapping if needed */
-    margin: 20px 0; /* Add spacing between sections */
+    margin: 10px 0; /* Add spacing between sections */
 }
 
 /* Media elements styling */
@@ -472,7 +473,7 @@ video, img {
 /* Subtitle alignment */
 .subTitle {
     text-align: center; /* Center the titles */
-    margin-bottom: 5px; /* Add spacing below titles */
+    margin-bottom: 2px; /* Add spacing below titles */
     font-size: 40px;
     font-family: "Jersey 10", serif, sans-serif;
     letter-spacing: 6px;
