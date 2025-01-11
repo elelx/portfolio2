@@ -5,10 +5,24 @@
     box-sizing: border-box;
 }
 
+
 body {
     background-color: black;
     color: #fff;
     padding-top: 100px; /* Space for the header */
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 html {
@@ -266,8 +280,9 @@ flex-wrap: wrap;
 
 }
 .about-col-1 img {
-    width: 300px; /* Set a fixed width */
-    height: 300px; /* Set the same height as the width */
+    margin-top: 10%;
+    width: 400px; /* Set a fixed width */
+    height: 400px; /* Set the same height as the width */
     object-fit: cover; /* Ensure the image fits well inside the circle */
     border-radius: 50%; /* Makes it a perfect circle */
 }
@@ -443,10 +458,19 @@ letter-spacing: 4px;
 
 /*-line-*/
 #scroll-container{
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    gap: 10px;
+    overflow-x: auto;
 }
 
 /*---portfolio ----*/
@@ -487,6 +511,7 @@ video, img {
 }
 
 .TitleGame{
+    margin-top: 50px;
     margin-bottom: 20px; /* Add spacing below titles */
     font-size: 80px;
     font-family: "Jersey 10", serif, sans-serif;
