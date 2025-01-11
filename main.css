@@ -32,7 +32,7 @@ html {
 /* Header container for logo and fixed header */
 .header-container {
     position: fixed;
-    top: 3%;
+    top: 2%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
@@ -43,14 +43,14 @@ html {
 
 /* Logo styling */
 .logo {
-    width: 130px;
+    width: 90px;
     margin-right: 20px;
     position: relative;
     transition: width 0.3s ease;
 }
 
 .logo:hover {
-    width: 135px;
+    width: 100px;
 }
 
 /* Fixed header wrapping buttons */
@@ -59,7 +59,7 @@ html {
     background-color: rgba(33, 33, 33, 0.861);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 15px 30px;
+    padding: 10px 20px;
     display: flex;
     justify-content: center;
 }
@@ -86,14 +86,14 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 23px;
     font-family: "Jersey 10", serif, sans-serif;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     transition: font-size 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    font-size: 35px;
+    font-size: 25px;
     color: pink;
 }
 
@@ -120,24 +120,31 @@ nav ul li a:hover {
 }
 
 .name-image{
-    width: 90%;
+    width: 70%;
     height: auto;
     position: relative;
 
     margin: 10px 0;
+    position: relative;
+
+    top: -30px;
 }
 .mouse-image {
 
-        width: 100%;
+        width: 85%;
         position: relative;
-         top: -50px;
+         top: -80px;
     margin-bottom: -150px;
 }
 .text-above {
-    margin-top: 80px;
-    font-size: 50px;
+    margin-top: 60px;
+    font-size: 40px;
     font-family: "Jersey 10", serif, sans-serif;
     letter-spacing: 4px;
+    position: relative;
+
+    top: -40px;
+
 }
 
 /* General styles for text-below */
@@ -152,8 +159,8 @@ nav ul li a:hover {
 .text-below.visible {
     opacity: 1;
     transform: translateY(0);
-    margin-top: 15px;
-    font-size: 35px;
+    margin-top: 2px;
+    font-size: 25px;
     font-family: "Jersey 10", serif, sans-serif;
     letter-spacing: 4px;
 }
@@ -161,7 +168,7 @@ nav ul li a:hover {
 .contact-images ul{
     list-style: none;
     display: flex;
-    gap: 20px; /* Adjust spacing between images */
+    gap: 15px; /* Adjust spacing between images */
     flex-wrap: wrap;
     overflow-x: auto;
 }
@@ -172,7 +179,7 @@ nav ul li a:hover {
 
 .contact-images img {
     margin-top: 100%;
-    width: 35px; /* Adjust the size of the images */
+    width: 30px; /* Adjust the size of the images */
     height: auto; 
     object-fit: contain; /* Ensure proper scaling */
     filter:grayscale(10)
@@ -243,7 +250,7 @@ nav ul li a:hover {
 /*---------------------about--------------------*/
 
 #about{
-    padding: 150px 10%;
+    padding: 100px 10%;
     color:#ababab;
     margin: 0 auto;
 }
@@ -288,11 +295,10 @@ letter-spacing: 4px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
-    font-size: 20px;
-    font-weight: 10;
+    font-size: 15px;
     color: white;
     font-family: "Jersey 10", serif, sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 .tab-titles{
@@ -307,7 +313,7 @@ letter-spacing: 4px;
 
 .tab-links{
     margin-right: 50px;
-    font-size: 30px;
+    font-size: 20px;
     cursor: pointer;
     position: relative;
     font-family: "Jersey 10", serif, sans-serif;
@@ -332,14 +338,14 @@ letter-spacing: 4px;
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
-    font-size: 20px;
+    font-size: 15px;
     font-family: "Jersey 10", serif, sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 
 }
 .tab-contents ul li span{
     color: white;
-    font-size: 25px;
+    font-size: 20px;
 
 }
 
@@ -365,7 +371,7 @@ letter-spacing: 4px;
 }
 
 .software-images img {
-    width: 70px; /* Adjust the size of the images */
+    width: 50px; /* Adjust the size of the images */
     height: auto; /* Maintain aspect ratio */
     object-fit: contain; /* Ensure proper scaling */
 }
@@ -466,15 +472,16 @@ video, img {
 /* Subtitle alignment */
 .subTitle {
     text-align: center; /* Center the titles */
-    margin-bottom: 10px; /* Add spacing below titles */
-    font-size: 50px;
+    margin-bottom: 5px; /* Add spacing below titles */
+    font-size: 40px;
     font-family: "Jersey 10", serif, sans-serif;
-    letter-spacing: 7px;
+    letter-spacing: 6px;
+    margin-top: 10px;
 }
 
 .TitleGame{
-    margin-bottom: 10px; /* Add spacing below titles */
-    font-size: 100px;
+    margin-bottom: 20px; /* Add spacing below titles */
+    font-size: 80px;
     font-family: "Jersey 10", serif, sans-serif;
     letter-spacing: 7px;
 }
