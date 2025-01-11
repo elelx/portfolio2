@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="image/Project9 copy.png">
+    <title>Elva's Portfolio Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id = "top"></div>
+    <div class="header-container">
+       <a href ="#top">  <img src="image/Project9.png" alt="logo" class="logo"></a>
+        <div class="fixed-header">
+            <nav>
+                <ul>
+                    <li><a href="#worbut" class="button">Portfolio </a>
+                        <ul class="submenu">
+                            <li><a href="models.html">3D Models</a></li>
+                            <li><a href="work.html">Games</a></li>
+                            <li><a href="illustrations.html">Illustrations</a></li>
+                            <li><a href="illustrations.html">Animations</a></li>
+                            <li><a href="personal.html">Personal</a></li>
+
+
+                          </ul></li>
+                    <li><a href="#" class="button">Contact</a></li>
+                    <li><a href="#about" class="button">About</a></li>
+
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <div class="image-row">
+            <div class="image-container">
+                <p class="text-above">Hi! My <span id="name">name</span> is</p>
+                <img src="image/NameM.png" alt="Name Image" class="name-image">
+                <p class="text-below">I am a <span id="game">game design</span> student at The New School: Parsons</p>
+            <div class="contact-images"> 
+                 <ul> 
+                <li><a href = "https://www.linkedin.com/in/elva-liu/" target="_blank"> <img src = "image/LinkedIn.png" alt = "linkedin"></a></li>
+                <li><a href = "https://elvaxx.itch.io/" target="_blank"> <img src = "image/itch.png" alt = "itch"></a></li>
+                <li><a href = "mailto:elvaschoo@gmail.com" target="_blank"> <img src = "image/mail.png" alt = "mail"></a></li>
+                 </ul>
+             </div>
+            </div>
+            <div class="image-container">
+                <img src="image/MouseM.png" alt="Mouse Image" class="mouse-image">
+            </div>
+        </div>
+    </div>
+
+    <div class="slider" style="
+    --width: 300px;
+    --height: 300px;
+    --quantity: 6;">
+        <div class="list">
+            <div class="item" style="--position: 1"><img src="image/Book.jpg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="image/Mo.png" alt=""></div>
+            <div class="item" style="--position: 3"><img src="image/shark.png" alt=""></div>
+            <div class="item" style="--position: 4"><img src="image/Bunny.png" alt=""></div>
+            <div class="item" style="--position: 5"><img src="image/Computer.jpg" alt=""></div>
+            <div class="item" style="--position: 6"><img src="image/shrimp.jpg" alt=""></div>
+            <!-- Duplicate items for continuous loop -->
+            <div class="item" style="--position: 1"><img src="image/Book.jpg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="image/Mo.png" alt=""></div>
+            <div class="item" style="--position: 3"><img src="image/shark.png" alt=""></div>
+            <div class="item" style="--position: 4"><img src="image/Bunny.png" alt=""></div>
+            <div class="item" style="--position: 5"><img src="image/Computer.jpg" alt=""></div>
+            <div class="item" style="--position: 6"><img src="image/shrimp.jpg" alt=""></div>
+        </div>
+    </div>
+<!---------------------about-------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/user.png" alt="User">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">ABOUT ME</h1>
+   
+                
+                <p class="body-text">
+                    Hi! I'm Elva, and I am a Game Design student based in New York City!
+                    I love creating 3D critters for my games—tiny, simple creatures that add a 
+                    sense of escapism. Whether they're roaming around or offering a peaceful break 
+                    in an intense game, I hope they can bring a touch of calm to balance the action-packed moments.
+
+                    <p class="body-text">  I’m currently a Freelance artist, crafting short 2D animations, comics, and 3D models. I bring creativity and technical skills to every project. 
+                    In my portfolio, you’ll find examples of my work, including short games, animations, and 
+                    personal projects. </p>
+
+                    <p class="body-text"> I’m eager to collaborate with teams that value creativity and innovation, and to contribute to projects that make players smile.        </p>   
+                            </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul class = "software-list">
+                        <li><span>
+                            <div class = "software-images">
+                                <img class = "aftereffects" src="image/Affects.png" alt="AdobeAfterEffects">
+                                <img src="image/Animate.png" alt="Animate">
+                                <img src="image/Illustrator.png" alt="Illustrator">
+                                <img src="image/Indesin.png" alt="Indensign">
+                                <img src="image/photoshop.png" alt="photosjop">
+                                <img src="image/premierpro.png" alt="premierpro">
+                                <img src="image/nomad.png" alt="nomad">
+                                <img src="image/unity.webp" alt="unity">
+                                <img src="image/blender.png" alt="blender">
+                                
+                            </div> 
+                        </span><br>
+                            
+                        </li>
+
+                    </ul>
+                    <ul> 
+                        <li><span>Softwares</span><br> Adobe Suite: After Effects, Animate, Illustrator, InDesign, Photoshop, Premiere Pro Nomad Sculpt, Unity, Blender</li>
+                        <li><span>Languages</span><br> C#, Javascript, Html, CSS </li> 
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Mural Art Intership</span><br> Philadelphia Chinatown Development Coporation, 2021</li>
+                        <li><span>Freelance Artist</span> <br>2022-Present</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>The New School</span><br> Design & Technology: Game Design, 2023-Present</li>
+                        <li><span>Workshops:</span><br> Unity and Unreal Engine</li>
+                    </ul>
+                </div>
+     
+                <div class = "contact-images-2">
+                    <li><a href = "https://www.linkedin.com/in/elva-liu/" target="_blank"> <img src = "image/LinkedIn2.png" alt = "linkedin"></a></li>
+                    <li><a href = "https://elvaxx.itch.io/" target="_blank"> <img src = "image/itch2.png" alt = "itch"></a></li>
+                    <li><a href = "mailto:elvaschoo@gmail.com" target="_blank"> <img src = "image/mail2.png" alt = "mail"></a></li>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----Portfolio -->
+<div id="worbut">hi</div>
+<div id ="portfolio">
+    <div class ="container2">
+        <h1 class = "TitleGame">MY PORTFOLIO</h1>
+        <h1 class = "subTitle">Games</h1>
+            <div id = "gameVid">
+            <video muted id = "horrorvid" width = "540" height = "360" loop autoplay>
+                <source src = "work/HorrorVid.mp4" type = "video/mp4">
+            </video>
+
+            <video muted id = "KoAvid" width = "540" height = "360" loop autoplay>
+                <source src = "work/KoAVid.mp4" type = "video/mp4">
+            </video>
+
+            <video muted id = "KoAvid" width = "540" height = "360" loop autoplay>
+                <source src = "work/shrek.mp4" type = "video/mp4">
+            </video>
+            </div>
+        <!--Button-->
+            <div id = "viewGames1"><a href="work.html" class="button">view more</a></div>
+
+
+        <h1 class = "subTitle">3D Models</h1>
+            <div id = "mdodels"> 
+
+            <video controls width="540" height="360" loop autoplay>
+                <source src = "work/Book.mov" type="video/mp4">
+            </video>
+
+            <video controls width="400" height="360" loop autoplay>
+                <source src ="work/Skeleton3D.mp4" type ="video/mp4">
+            </video>
+            <video controls width="500" height="360" loop autoplay>
+                <source src ="work/candle.mov" type ="video/mp4">
+            </video>
+            <video controls width="550" height="360" loop autoplay>
+                <source src ="work/tube3D.mp4" type ="video/mp4">
+            </video>
+            <video controls width="550" height="360" loop autoplay>
+                <source src ="work/Medical3D.mp4" type ="video/mp4">
+            </video>
+          </div>
+ <!--Button-->
+ <div id = "viewGames2"><a href="models.html" class="button">view more</a></div>
+
+        <h1 class = "subTitle">Illustrations/Animations</h1>
+        <div id ="illustrations">
+            <img src = "work/fortune1.jpg" alt = "comic1" height="360" width = "600">
+            <video muted width="650" height="360" loop autoplay>
+                <source src ="work/ReliefVid.mp4" type ="video/mp4">
+            </video>
+            <video muted width="600" height="360" loop autoplay>
+                <source src ="work/walkAnim.mp4" type ="video/mp4">
+            </video>
+            <img src = "work/pigeon3.jpg" alt = "comic1" width ="300"height="360" width = "600">
+            <img src = "work/pigeon1.jpg" alt = "comic1" width ="300"height="360" width = "600">
+
+        </div>
+
+ <!--Button-->
+     <div id = "viewGames3"><a href="illustrations.html" class="button">view more</a></div>
+
+        <h1 class = "subTitle">Personal Work</h1>
+          <div id = "personal">
+            <img src = "work/Zock_Band_1.png" alt = "comic1" width = "300">
+            <img src = "work/Zock_Band_2.png" alt ="comic2" width = "300">
+            <img src = "work/spidakilla.jpg" alt ="comic2" width = "690">
+
+          </div>
+
+<!--Button-->
+     <div id = "viewGames4"><a href="personal.html" class="button">view more</a></div>
+
+    </div>
+</div>
+
+<script>
+    function opentab(event, tabname) {
+        const tablinks = document.querySelectorAll(".tab-links");
+        const tabcontents = document.querySelectorAll(".tab-contents");
+
+        tablinks.forEach(link => link.classList.remove("active-link"));
+        tabcontents.forEach(content => content.classList.remove("active-tab"));
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            const textElements = document.querySelectorAll(".text-below");
+            textElements.forEach(element => {
+                const rect = element.getBoundingClientRect();
+                if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                    element.classList.add("visible");
+                }
+            });
+        });
+    </script>
+
+   
+</body>
+</html>
