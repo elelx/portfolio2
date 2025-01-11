@@ -1,0 +1,189 @@
+/* General reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: #fff;
+    padding-top: 100px; /* Space for the header */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+#top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 1px;
+    visibility: hidden; /* Keeps it invisible but functional */
+  }
+
+/* Header container for logo and fixed header */
+.header-container {
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo styling */
+.logo {
+    width: 130px;
+    margin-right: 20px;
+    position: relative;
+    transition: width 0.3s ease;
+}
+
+.logo:hover {
+    width: 135px;
+}
+
+/* Fixed header wrapping buttons */
+.fixed-header {
+    flex-grow: 1;
+    background-color: rgba(33, 33, 33, 0.861);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.fixed-header:hover {
+    background-color: rgba(72, 43, 43, 0.9);
+    transition: background-color 0.3s ease;
+}
+
+
+/* Navigation menu */
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Jersey 10", serif, sans-serif;
+    letter-spacing: 4px;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    font-size: 35px;
+    color: pink;
+}
+
+/* Hide the submenu by default */
+.submenu {
+    display: none;
+    position: absolute; /* Position relative to the parent */
+    background-color: #f2aeaed7;
+    list-style: none;
+    padding: 12px;
+    border-radius: 10px;
+  }
+  
+  /* Show the submenu when hovering over the parent list item */
+  li:hover .submenu {
+    display: block;
+  }
+  
+  /* Optional styling for the menu items */
+  li {
+    position: relative; /* Ensure the submenu is positioned correctly */
+  }
+  
+  .submenu li {
+    padding: 8px;
+  }
+  
+  .submenu li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  .submenu li a:hover {
+    color: #f08dbd;
+  }
+  #portfolio {
+    padding: 50px 0;
+    background: linear-gradient(to bottom, black 2%, rgb(1, 5, 18) 5%);
+}
+
+/* Centering the container and its contents */
+.container2 {
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Centers content horizontally */
+}
+
+/* Ensure each section is in its own line */
+#gameVid{
+    width: 100%; /* Each section takes the full width */
+    display: flex; /* Use Flexbox for child alignment */
+    justify-content: center; /* Centers the content */
+    flex-wrap: wrap; /* Allows wrapping if needed */
+    margin: 20px 0; /* Add spacing between sections */
+}
+
+/* Media elements styling */
+video, img {
+    margin: 10px; /* Add spacing around items */
+}
+
+/* Subtitle alignment */
+.subTitle {
+    text-align: center; /* Center the titles */
+    margin-bottom: 10px; /* Add spacing below titles */
+    font-size: 50px;
+    font-family: "Jersey 10", serif, sans-serif;
+    letter-spacing: 7px;
+}
+
+.TitleGame{
+    margin-bottom: 10px; /* Add spacing below titles */
+    font-size: 100px;
+    font-family: "Jersey 10", serif, sans-serif;
+    letter-spacing: 7px;
+}
+
+#viewGames1 {
+    font-size: 20px;
+    font-family: "Jersey 10", serif, sans-serif;
+    margin-bottom: 2%;
+    letter-spacing: 2px;
+    display: inline-block; /* Makes sure the background wraps the text */
+    padding: 15px 20px; /* Adds space around the text */
+    background-color: #6c8da37e; /* Rectangle color */
+    border-radius: 100px; /* Optional: Adds rounded corners to the rectangle */
+}
+
+#clouds{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 1px;
+}
+
+.cloud2{
+    left:80%;
+}
