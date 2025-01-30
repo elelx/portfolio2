@@ -123,6 +123,7 @@ nav ul li a:hover {
     justify-content: center;
     gap: 1px;
     flex-wrap: wrap;
+margin-bottom:-30px
 }
 
 .image-container {
@@ -131,6 +132,7 @@ nav ul li a:hover {
     align-items: center;
     max-width: 45%;
     overflow: visible; /* Allow the child to move outside the container */
+
 }
 
 .name-image{
@@ -139,7 +141,6 @@ nav ul li a:hover {
     position: relative;
     margin: 10px 0;
     position: relative;
-
     top: -30px;
 }
 .mouse-image {
@@ -156,27 +157,29 @@ nav ul li a:hover {
     letter-spacing: 4px;
     position: relative;
 
-    top: -40px;
+    top: -10px;
 
 }
 
 /* General styles for text-below */
 .text-below {
-    opacity: 0; /* Start invisible */
-    transform: translateY(20px); /* Start slightly below */
-    transition: opacity 1s ease, transform 1s ease;
-   
+    opacity: 1; /* Start invisible */
+   /* transform: translateY(20px); /* Start slightly below */
+   /* transition: opacity 1s ease, transform 1s ease; */
+    font-size: 25px;
+    font-family: "Jersey 10", serif, sans-serif;
+    letter-spacing: 4px;
 }
 
 /* When text comes into the viewport, it becomes visible and moves to its final position */
-.text-below.visible {
+/*.text-below.visible {
     opacity: 1;
     transform: translateY(0);
     margin-top: 2px;
     font-size: 25px;
     font-family: "Jersey 10", serif, sans-serif;
     letter-spacing: 4px;
-}
+} */
 
 .contact-images ul{
     list-style: none;
@@ -184,6 +187,7 @@ nav ul li a:hover {
     gap: 15px; /* Adjust spacing between images */
     flex-wrap: wrap;
     overflow-x: auto;
+    
 }
 .contact-images ul li{
     display: inline-block;

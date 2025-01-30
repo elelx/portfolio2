@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: #fff;
+    padding-top: 100px;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 1px;
+    visibility: hidden; 
+  }
+
+#worbut{
+    height: 45px;
+    visibility: hidden; 
+
+}
+
+.header-container {
+    position: fixed;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo styling */
+.logo {
+    width: 90px;
+    margin-right: 20px;
+    position: relative;
+    transition: width 0.3s ease;
+}
+
+.logo:hover {
+    width: 100px;
+}
+
+/* Fixed header wrapping buttons */
+.fixed-header {
+    flex-grow: 1;
+    background-color: rgba(33, 33, 33, 0.861);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.fixed-header:hover {
+    background-color: rgba(72, 43, 43, 0.9);
+    transition: background-color 0.3s ease;
+}
+
+
+/* Navigation menu */
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Jersey 10", serif, sans-serif;
+    letter-spacing: 2px;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    font-size: 30px;
+    color: pink;
+}
+
+/* Hide the submenu by default */
+.submenu {
+    display: none;
+    position: absolute; /* Position relative to the parent */
+    background-color: #f2aeaed7;
+    list-style: none;
+    padding: 12px;
+    border-radius: 10px;
+  }
+  
+  /* Show the submenu when hovering over the parent list item */
+  li:hover .submenu {
+    display: block;
+  }
+  
+  /* Optional styling for the menu items */
+  li {
+    position: relative; /* Ensure the submenu is positioned correctly */
+  }
+  
+  .submenu li {
+    padding: 8px;
+  }
+  
+  .submenu li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  .submenu li a:hover {
+    color: #f08dbd;
+  }
+
+#title{
+    color: white;
+    text-align: center;
+    font-size: 55px;
+    font-family: "Jersey 10", serif, sans-serif;
+    letter-spacing: 4px;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        gap: 10px;
+    }
+    .logo{
+        width: 100px;
+        
+    }
+    nav ul {
+        gap: 15px; /* Adjust spacing for smaller screens */
+    }
+
+
+}
+
+
+
+
