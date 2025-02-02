@@ -165,3 +165,10 @@ nav ul li a:hover {
 
 
 
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+}
