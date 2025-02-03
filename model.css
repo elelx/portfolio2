@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 2px 5px;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -207,4 +207,24 @@ nav ul li a:hover {
     letter-spacing: 4px;
     margin-top: 5%;
     margin-bottom: 5%;
+}
+
+#title25{
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    font-family: "Jersey 10", serif, sans-serif;
+    letter-spacing: 1px;
+    margin-top: 10%;
+
+}
+
+#title3{
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    font-family: "Jersey 10", serif, sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 5%;
+
 }
