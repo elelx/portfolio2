@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="image/Project9 copy.png">
+    <title>Elva's Portfolio Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="NaDa.css">
+</head>
+<body>
+
+    <div id = "top"></div>
+    <div class="header-container">
+       <a href ="#top">  <img src="../image/Project9.png" alt="logo" class="logo"> </a>
+       
+        <div class="fixed-header">
+            <nav>
+                <ul>
+                    <li><a href="../index.html" class="button">Home</a></li>
+
+                    <li><a href="#worbut" class="button">Portfolio </a>
+                        <ul class="submenu">
+                            <li><a href="../models.html">3D Models</a></li>
+                            <li><a href="../work.html">Games</a></li>
+                            <li><a href="../illustrations.html">Illustrations/Animations</a></li>
+                            <li><a href="../personal.html">Personal</a></li>
+                          </ul></li>
+
+                          <li><a href="#worbut" class="button">Games </a>
+                            <ul class="submenu">
+                                <li><a href="../work.html">All Games</a></li>
+                                <li><a href="../work.html">Shrek Adventure Game</a></li>
+                                <li><a href="../illustrations.html">KOA | Visual Novel</a></li>
+                                <li><a href="../personal.html">Muesum Walking Sim</a></li>
+                              </ul></li>
+
+
+                    <li><a href="../index.html" class="button">Contact</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+<!--GAME PAGE -->
+
+<div class = "container">  
+    <div class = "title">  NANA and DA's </div>
+    <div id = "sub-title"> Walking Simulator | 2025</div>
+</div>
+
+<div class="container1">
+    <div class="image-slider">
+        <span class="arrow prev" onclick="changeSlide(-1)">❮</span>
+        <img id="slider" src="../NaDaGame/cat snapshot.png" alt="Slideshow Image">
+        <span class="arrow next" onclick="changeSlide(1)">❯</span>
+    </div>
+
+
+    <div class="text-section">
+        <div id = "titles">
+            <span class="program-title">Programs:</span>  Blender, Unity 
+        </div>
+        <div id = "titles">
+            <span class="program-title"> Role:</span> Solo Developer & Designer
+        </div>
+        <div id = "text">
+            <li>Designed gameplay mechanics, UI/UX, and overall game concept. </li> 
+            <li>Developed all aspects of the game, including coding, mechanics, and features. </li> 
+            <li> Created and curated all game assets (models, textures, animations, etc.).</li> 
+        </div>
+
+        <div id = "titles">
+            Concept:
+        </div>
+
+        <div id = "text">
+Nana’s and Da’s is a short walking simulator where players explore one of the two contrasting towns: 
+Nana, the land of animals while Da, the land of vegetables is hidden away.
+
+As players interact with the environment, animals, and objects, they uncover the events 
+that led to a rift between the two communities and work toward healing their fractured 
+relationship.
+
+</div>
+
+
+<div id = "titles">
+    Key Features:
+</div>
+
+<div id = "text">
+  <li>  <span class = "title1"> Heartfelt Narrative: </span> The game focuses on the themes of mending relationships and understanding
+    differing perspectives through exploration and environmental storytelling.
+</li>
+<li> 
+    <span class = "title1"> Low-Poly Aesthetic: </span> The game uses a cozy, low-poly art style to create a relaxed atmosphere 
+   while keeping the focus on the narrative.
+</li>
+</div>
+
+</div>
+
+<div id="logo">
+    <a target="_blank" rel="noopener noreferrer" href="https://elvaxx.itch.io/walking-sim">
+      <img src="../work/badge-color.png" width="135px" height="40px" alt="Logo">
+    </a>
+  </div>
+
+<script src = NaDa.js></script>
+
+
+</body>
+</html>

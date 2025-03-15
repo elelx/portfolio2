@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel = "stylesheet" href = "ReliefAnim.css">
+
+</head>
+<body>
+     <!-- Clickable Image
+    <div class="gallery">
+        <img src="../image/BugSpray.png" alt="Thumbnail" class="thumbnail" onclick="openPopup('large-image.jpg')">
+    </div>
+
+Pop-up (Hidden by Default) 
+    <div id="popup" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img id="popup-img" class="popup-content" src="">
+    </div> -->
+
+
+    <!-- Clickable Image -->
+    <div class="gallery">
+        <img src="small-image.jpg" alt="Thumbnail" class="thumbnail" onclick="openPopup('large-image.jpg', 'Title of the Image', 'This is a description of the image.')">
+    </div>
+
+    <!-- Pop-up (Hidden by Default) -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 id="popup-title">Title Goes Here</h2>
+            <img id="popup-img" src="" alt="Large Image">
+            <p id="popup-text">Description goes here.</p>
+            <div class="extra-content">
+                <h3>Additional Information</h3>
+                <p>This is some extra text that appears in the pop-up.</p>
+                <img src="extra-image.jpg" alt="Extra Image">
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="ReliefAnim.js"></script>
+</body>
+</html>

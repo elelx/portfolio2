@@ -1,0 +1,311 @@
+/* General reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding-top: 100px; /* Space for the header */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+#top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 1px;
+    visibility: hidden; /* Keeps it invisible but functional */
+  }
+
+/* Header container for logo and fixed header */
+.header-container {
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 90px;
+    margin-right: 20px;
+    position: relative;
+    transition: width 0.3s ease;
+}
+
+
+.fixed-header {
+    flex-grow: 1;
+    background-color: rgba(33, 33, 33, 0.861);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.fixed-header:hover {
+    background-color: rgba(72, 43, 43, 0.9);
+    transition: background-color 0.3s ease;
+}
+
+/* Navigation menu */
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Jersey 10", serif, sans-serif;
+    letter-spacing: 2px;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    font-size: 30px;
+    color: pink;
+}
+
+/* Hide the submenu by default */
+.submenu {
+    display: none;
+    position: absolute; /* Position relative to the parent */
+    background-color: #f2aeaed7;
+    list-style: none;
+    padding: 12px;
+    border-radius: 10px;
+  }
+  
+  /* Show the submenu when hovering over the parent list item */
+  li:hover .submenu {
+    display: block;
+  }
+  
+  /* Optional styling for the menu items */
+  li {
+    position: relative; /* Ensure the submenu is positioned correctly */
+  }
+  
+  .submenu li {
+    padding: 8px;
+  }
+  
+  .submenu li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  .submenu li a:hover {
+    color: #f08dbd;
+  }
+  #portfolio {
+    padding: 50px 0;
+    background: linear-gradient(to bottom, black 2%, rgb(1, 5, 18) 5%);
+}
+
+.subTitle {
+    text-align: center; /* Center the titles */
+    margin-bottom: 2px; /* Add spacing below titles */
+    font-size: 40px;
+    font-family: "Jersey 10", serif, sans-serif;
+    letter-spacing: 6px;
+    margin-top: 10px;
+}
+
+#illustrations{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin: 10px 10px; 
+    gap: 15px;
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+
+    text-align: center;
+
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Jersey 10", serif, sans-serif;
+    letter-spacing: 1px;
+    transition: font-size 0.3s ease, color 0.3s ease;
+
+    gap: 30px;
+
+    margin-bottom: 50px;
+}
+
+.subTitle1 {
+    text-align: center; /* Center the titles */
+    margin-bottom: 2px; /* Add spacing below titles */
+    font-size: 40px;
+    font-family: "Jersey 10", serif, sans-serif;
+    letter-spacing: 6px;
+    margin-top: 30px;
+}
+/* Ensure parent is positioned relative */
+.relief {
+    position: relative;
+    display: inline-block;
+    width: 650px;
+}
+
+/* Video styling */
+video {
+    width: 100%;
+    display: block;
+}
+
+/* Title styling */
+.gameTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: rgba(0, 0, 0, 0.7); */
+    color: white ;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-family: "Jersey 10", serif, sans-serif;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+.gameTitle a {
+    color: white; /* Changes link text to white */
+}
+
+.gameTitle a:hover {
+    color: #f08dbd !important;
+}
+
+/* Dark overlay effect on hover */
+.relief::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.3s ease-in-out;
+}
+
+/* Show overlay and title on hover */
+.relief:hover::before {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.relief:hover .gameTitle {
+    opacity: 1;
+}
+
+
+
+/* Video Styling
+.clickable-video {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.clickable-video:hover {
+    transform: scale(1.05);
+} */
+
+/* Game Title */
+.gameTitle a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.gameTitle a:hover {
+    color: red;
+}
+
+/* Popup Background */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Scrollable Popup Content */
+.popup-content {
+    background: rgb(12, 11, 11);
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 5px;
+    max-width: 80%;
+    max-height: 80vh;  /* Limits height to 80% of the screen */
+    overflow-y: auto;  /* Enables vertical scrolling */
+    text-align: center;
+    position: relative;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+#titles{
+    font-size: 28px;
+    color: rgb(194, 79, 98);
+    margin:1%;
+
+
+}
+
+.popup-content a{
+    color: pink;
+}
+
+#text{
+    margin:1%;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 18px;
+
+}

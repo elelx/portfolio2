@@ -570,4 +570,60 @@ a {
   .submenu li a:hover {
     color: #f08dbd;
   }
-  
+/* Container for each video */
+
+.game-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Main container that holds all videos */
+.video-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line */
+    gap: 10px; /* Adds spacing between videos */
+    justify-content: center; /* Centers videos horizontally */
+}
+
+/* Video styling */
+video {
+    width: 600px;
+    height: 360px;
+    display: block;
+}
+
+/* Title overlay (hidden by default) */
+.gameTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px 20px;
+    font-size: 50px;
+    font-family: "Jersey 10", serif, sans-serif;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+
+
+}
+
+
+/* Dark overlay effect on hover */
+.game-container:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Show title on hover */
+.game-container:hover .gameTitle {
+    opacity: 1;
+}

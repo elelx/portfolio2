@@ -11,10 +11,7 @@
     <link rel="stylesheet" href="work.css">
 </head>
 <body>
-    <div class ="clouds">
-    <img id= "cloud1" src = "work/cloud1.png" alt = "cloud" width = "300">
-    <img id= "cloud2" src = "work/cloud2.png" alt = "cloud" width = "300">
-    </div>
+
     <div id = "top"></div>
     <div class="header-container">
        <a href ="#top">  <img src="image/Project9.png" alt="logo" class="logo"> </a>
@@ -22,17 +19,16 @@
         <div class="fixed-header">
             <nav>
                 <ul>
-                    <li><a href="main.html" class="button">Home</a></li>
+                    <li><a href="index.html" class="button">Home</a></li>
 
                     <li><a href="#worbut" class="button">Portfolio </a>
                         <ul class="submenu">
                             <li><a href="models.html">3D Models</a></li>
                             <li><a href="work.html">Games</a></li>
-                            <li><a href="illustrations.html">Illustrations</a></li>
-                            <li><a href="illustrations.html">Animations</a></li>
+                            <li><a href="illustrations.html">Illustrations/Animations</a></li>
                             <li><a href="personal.html">Personal</a></li>
                           </ul></li>
-                    <li><a href="#" class="button">Contact</a></li>
+                    <li><a href="index.html" class="button">Contact</a></li>
                     
                 </ul>
             </nav>
@@ -40,25 +36,42 @@
     </div>
     <div id ="portfolio">
         <div class ="container2">
-            <h1 class = "TitleGame">MY PORTFOLIO</h1>
-            <h1 class = "subTitle">Games</h1>
-                <div id = "gameVid">
-                <video muted id = "horrorvid" width = "800" height = "360" loop autoplay>
-                    <source src = "work/HorrorVid.mp4" type = "video/mp4">
-                </video>
+            <h1 class = "TitleGame">GAMES</h1>
+            <!-- <h1 class = "subTitle">Games</h1> -->
+            <div class="video-container">
+                <!-- Horror Museum Game -->
+            <a href="gamePagws/NaDa.html">
+                <div class="game-container">
+                    <img src = "2025Work/cat snapshot.png" alt = "NaNa" width="600" height="360">
+                    <div class="gameTitle">Nana and Da walking simulator</div>
+                </div>
+            </a>
+            
+                <div class="game-container">
+                    <video muted loop autoplay>
+                        <source src="work/HorrorVid.mp4" type="video/mp4">
+                    </video>
+                    <div class="gameTitle">Horror Museum Game </div>
+                </div>
         
-           
-                </div>
-                <div> 
-                    <video muted id = "KoAvid" width = "800" height = "360" loop autoplay>
-                        <source src = "work/KoAVid.mp4" type = "video/mp4">
+                <!-- KoA Video -->
+                <div class="game-container">
+                    <video muted loop autoplay>
+                        <source src="work/KoAVid.mp4" type="video/mp4">
                     </video>
+                    <div class="gameTitle">Kingdom of Avalon | Visual Novel</div>
+    
                 </div>
-                <div> 
-                    <video muted id = "KoAvid" width = "800" height = "360" loop autoplay>
-                        <source src = "work/shrek.mp4" type = "video/mp4">
+        
+                <!-- Shrek Video -->
+                <div class="game-container">
+                    <video muted loop autoplay>
+                        <source src="work/shrek.mp4" type="video/mp4">
                     </video>
+                    <div class="gameTitle">Shrek Adventure Maze runner</div>
+    
                 </div>
+            </div>
      </div>    
 </body>
 </html>

@@ -21,8 +21,7 @@
                         <ul class="submenu">
                             <li><a href="models.html">3D Models</a></li>
                             <li><a href="work.html">Games</a></li>
-                            <li><a href="illustrations.html">Illustrations</a></li>
-                            <li><a href="illustrations.html">Animations</a></li>
+                            <li><a href="illustrations.html">Illustrations/Animations</a></li>
                             <li><a href="personal.html">Personal</a></li>
 
 
@@ -170,19 +169,39 @@
     <div class ="container2">
         <h1 class = "TitleGame">MY PORTFOLIO</h1>
         <h1 class = "subTitle">Games</h1>
-            <div id = "gameVid">
-            <video muted  width = "600" height = "360" loop autoplay>
-                <source src = "work/HorrorVid.mp4" type = "video/mp4">
-            </video>
-
-            <video muted width = "600" height = "360" loop autoplay>
-                <source src = "work/KoAVid.mp4" type = "video/mp4">
-            </video>
-
-            <video muted width = "600" height = "360" loop autoplay>
-                <source src = "work/shrek.mp4" type = "video/mp4">
-            </video>
+        <div class="video-container">
+            <!-- Horror Museum Game -->
+            <div class="game-container">
+                <img src = "2025Work/cat snapshot.png" alt = "NaNa" width="600" height="360">
+                <div class="gameTitle">Nana and Da walking simulator</div>
             </div>
+            <div class="game-container">
+                <video muted loop autoplay>
+                    <source src="work/HorrorVid.mp4" type="video/mp4">
+                </video>
+                <div class="gameTitle">Horror Museum Game </div>
+            </div>
+    
+            <!-- KoA Video -->
+            <div class="game-container">
+                <video muted loop autoplay>
+                    <source src="work/KoAVid.mp4" type="video/mp4">
+                </video>
+                <div class="gameTitle">Kingdom of Avalon | Visual Novel</div>
+
+            </div>
+    
+            <!-- Shrek Video -->
+            <div class="game-container">
+                <video muted loop autoplay>
+                    <source src="work/shrek.mp4" type="video/mp4">
+                </video>
+                <div class="gameTitle">Shrek Adventure Maze runner</div>
+
+            </div>
+        </div>
+    
+    
         <!--Button-->
             <div id = "viewGames1"><a href="work.html" class="button">view more</a></div>
 
@@ -213,9 +232,12 @@
         <h1 class = "subTitle">Illustrations/Animations</h1>
         <div id ="illustrations">
             <img src = "work/fortune1.jpg" alt = "comic1" height="360" width = "600">
+            
             <video muted width="650" height="360" loop autoplay>
                 <source src ="work/ReliefVid.mp4" type ="video/mp4">
             </video>
+
+
             <video muted width="600" height="360" loop autoplay>
                 <source src ="work/walkAnim.mp4" type ="video/mp4">
             </video>
