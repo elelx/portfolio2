@@ -314,3 +314,7 @@ video {
     font-size: 18px;
 
 }
+
+#link:hover{
+    color: #ca596c;
+}

@@ -133,20 +133,21 @@ video, img {
     margin: 10px; /* Add spacing around items */
 }
 
-/* Subtitle alignment */
-.subTitle {
-    text-align: center; /* Center the titles */
-    margin-bottom: 10px; /* Add spacing below titles */
-    font-size: 50px;
-    font-family: "Jersey 10", serif, sans-serif;
-    letter-spacing: 7px;
-}
+
 
 .TitleGame{
     margin-bottom: 10px; /* Add spacing below titles */
     font-size: 100px;
     font-family: "Jersey 10", serif, sans-serif;
     letter-spacing: 7px;
+}
+
+.SubTitle{
+    margin-bottom: 10px; /* Add spacing below titles */
+    font-size: 40px;
+    font-family: "Jersey 10", serif, sans-serif;
+    letter-spacing: 7px;
+
 }
 
 .game-container {

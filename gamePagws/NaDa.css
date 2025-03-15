@@ -215,6 +215,11 @@ nav ul li a:hover {
     color: rgb(34, 0, 88);
 
 }
+
+
+#vide{
+   padding-bottom: 10%;
+}
 @media (max-width: 768px) {
     .container1 {
         max-width: 90%; 

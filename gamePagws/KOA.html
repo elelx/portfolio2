@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../image/fish.png">
+    <title>Elva's Portfolio Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="KOA.css">
+</head>
+<body>
+
+    <div id = "top"></div>
+    <div class="header-container">
+       <a href ="#top">  <img src="../image/Project9.png" alt="logo" class="logo"> </a>
+       
+        <div class="fixed-header">
+            <nav>
+                <ul>
+                    <li><a href="../index.html" class="button">Home</a></li>
+
+                    <li><a href="#worbut" class="button">Portfolio </a>
+                        <ul class="submenu">
+                            <li><a href="../models.html">3D Models</a></li>
+                            <li><a href="../work.html">Games</a></li>
+                            <li><a href="../illustrations.html">Illustrations/Animations</a></li>
+                            <li><a href="../personal.html">Personal</a></li>
+                          </ul></li>
+
+                          <li><a href="#worbut" class="button">Games </a>
+                            <ul class="submenu">
+                                <li><a href="../work.html">All Games</a></li>
+                                <li><a href="shrek.html">Shrek Maze Game</a></li>
+                                <li><a href="../gamePagws/Horror.html">Horror Muesum Game </a></li>
+                                <li><a href="../gamePagws/NaDa.html">Nana and Da</a></li>
+                              </ul></li>
+
+
+                    <li><a href="../index.html" class="button">Contact</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+<!--GAME PAGE -->
+
+<div class = "container">  
+    <div class = "title"> The story of Kingdom Aray </div>
+    <div id = "sub-title">  story of kings </div>
+    <div id = "sub-title1"> Visual Novel | 2024 </div>
+
+</div>
+
+<div class="container1">
+    <div class="image-slider">
+        <span class="arrow prev" onclick="changeSlide(-1)">❮</span>
+        <img id="slider" src="../work/KoA1.png" alt="Slideshow Image">
+        <span class="arrow next" onclick="changeSlide(1)">❯</span>
+    </div>
+
+
+    <div class="text-section">
+        <div id = "titles">
+            <span class="program-title">  Programs:</span>  <span class="text-section"> Blender, Unity , Adobe Photoshop, Nomad</span>
+        </div>
+        <div id = "titles">
+            <span class="program-title"> Role:</span> <span class="text-section"> Solo Developer & Designer</span>
+        </div>
+        <div id = "text">
+  
+        </div>
+
+        <div id = "titles">
+            Concept:
+        </div>
+
+        <div id = "text">
+            This short and whimsical visual novel blends classic fairytale charm
+             with interactive storytelling, inviting players into a magical kingdom
+              where humans and animals live in harmony. In this world, anyone with
+               the right virtues can rise to become king—but only if they make the 
+               right choices along the way.
+
+        </div>
+        <div id = "titles">
+            Inspiration:
+        </div>
+
+        <div id = "text">
+         <li> 
+            Classic fairytale cartoons – The nostalgic feel of storybooks that flip open as a narrator sets the stage.        </li>
+        <li> 
+            Cult of the Lamb’s aesthetic – A charming, textured 2D art style that combines storybook warmth with depth and personality.        </li>
+        <li> 
+            Interactive storytelling – Blending traditional narration with light interactivity to engage the player in unfolding the tale.        </li>
+
+        </div>
+
+        <div id = "titles">
+            Gameplay Mechanics
+        </div>
+
+        <div id = "text">
+         <li> 
+            Interactive Storytelling – Players experience the narrative by flipping pages, clicking on elements, and uncovering hidden details.
+        </li>
+
+        <div id = "titles">
+            Design Goals
+        </div>
+
+             <div id = "text">
+              <li> 
+            Immersive Sound Design – Subtle soundscapes and interactive effects enhance the storytelling experience.
+            </li>
+             <li> 
+            Rich Visual Texture – Hand-drawn illustrations with layered textures bring the world to life.
+            </li>
+
+             </div>
+        </div>
+</div>
+
+  <div class = "container">  
+
+<!-- <div id="logo">
+    <a target="_blank" rel="noopener noreferrer" href="https://elvaxx.itch.io/walking-sim">
+      <img src="../work/badge-color.png" width="135px" height="40px" alt="Logo">
+    </a>
+</div> -->
+
+    <div id = "sub-title"> short playthrough </div>
+
+    <video id = "vide" controls width = "600px" height = "400px" >
+        <source src="../videos/KOA.mp4" type="video/mp4">
+    </video>
+
+</div>
+
+
+
+<script src = KOA.js></script>
+
+</body>
+</html>

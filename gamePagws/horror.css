@@ -1,0 +1,284 @@
+/* General reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(11, 5, 5);
+    color: #fff;
+    padding-top: 100px; /* Space for the header */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+#top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 1px;
+    visibility: hidden; /* Keeps it invisible but functional */
+  }
+
+/* Header container for logo and fixed header */
+.header-container {
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 90px;
+    margin-right: 20px;
+    position: relative;
+    transition: width 0.3s ease;
+}
+
+.fixed-header {
+    flex-grow: 1;
+    background-color: rgba(114, 22, 22, 0.861);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.fixed-header:hover {
+    background-color: rgb(153, 60, 60);
+    transition: background-color 0.3s ease;
+}
+
+/* Navigation menu */
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Jersey 10", serif, sans-serif;
+    letter-spacing: 2px;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    font-size: 30px;
+    color: pink;
+}
+
+/* Hide the submenu by default */
+.submenu {
+    display: none;
+    position: absolute; 
+    background-color: #f2aeaed7;
+    list-style: none;
+    padding: 12px;
+    border-radius: 10px;
+  }
+  
+  li:hover .submenu {
+    display: block;
+  }
+  
+  li {
+    position: relative; 
+  }
+  
+  .submenu li {
+    padding: 8px;
+  }
+  
+  .submenu li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  .submenu li a:hover {
+    color: #ff62ae;
+  }
+  #portfolio {
+    padding: 50px 0;
+    background: linear-gradient(to bottom, black 2%, rgb(1, 5, 18) 5%);
+}
+
+
+/*----------------------------------*/
+
+.container{
+    align-items: center;
+    text-align: center;
+
+    font-family: "Jersey 10", serif, sans-serif;
+    letter-spacing: 2px;
+}
+
+.title{
+    font-size: 80px;
+}
+
+#sub-title{
+    font-size: 60px;
+    color: rgb(149, 36, 36);
+
+}
+
+.container1 {
+    display: flex;           
+    flex-direction: column;  
+    align-items: center;    
+    justify-content: center; 
+    text-align: center;     
+    max-width: 800px;        
+    margin: 0 auto; 
+    
+    margin-top: 2%;
+
+}
+
+.container1 li{
+    text-decoration: none;
+}
+.image-slider {
+    position: relative;
+}
+
+.image-slider img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    color: white;
+
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transform: translateY(-50%);
+}
+
+.arrow:hover {
+    color: rgba(228, 15, 15, 0.843)
+}
+
+.prev {
+    left: -50px;
+}
+
+.next {
+    right: -50px;
+}
+
+.text-section {
+    margin-top: 20px;
+    padding: 10px;
+
+    font-family: "Jersey 10", serif, sans-serif;
+    letter-spacing: 2px;
+
+    text-align: left;
+
+    color: rgb(239, 233, 251);
+
+    font-size: 20px;
+
+}
+
+#titles{
+    font-size: 25px;
+    text-align: left;
+
+    color: rgb(149, 36, 36);
+    margin-bottom: 1%;
+    margin-top: 1%;
+
+  }
+
+  .program-title{
+    font-size: 30px;
+
+  }
+
+
+
+#vide{
+   padding-bottom: 10%;
+}
+@media (max-width: 768px) {
+    .container1 {
+        max-width: 90%; 
+    }
+
+    .arrow {
+        font-size: 30px;  
+        padding: 10px;    
+    }
+
+    .prev {
+        left: 10px; 
+    }
+
+    .next {
+        right: 10px; 
+    }
+
+    .image-slider img {
+        max-width: 100%;  
+    }
+
+    .text-section {
+        font-size: 16px; 
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container1 {
+        max-width: 95%; 
+    }
+
+    .arrow {
+        font-size: 25px; 
+        padding: 8px;  
+    }
+
+    .prev {
+        left: 5px; 
+    }
+
+    .next {
+        right: 5px; 
+    }
+
+    .text-section {
+        font-size: 14px;  
+        padding: 6px;     
+    }
+}
+
+#logo{
+    margin: 3%;
+    align-items: center;
+    justify-content: center;
+}
