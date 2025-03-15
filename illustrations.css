@@ -172,8 +172,8 @@ nav ul li a:hover {
     position: relative;
     display: inline-block;
     width: 650px;
-}
 
+}
 /* Video styling */
 video {
     width: 100%;
@@ -251,6 +251,7 @@ video {
 }
 
 /* Popup Background */
+
 .popup {
     display: none;
     position: fixed;
@@ -261,6 +262,10 @@ video {
     background: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
+
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 2000;
 }
 
 /* Scrollable Popup Content */
@@ -276,6 +281,8 @@ video {
     position: relative;
 }
 
+
+
 /* Close Button */
 .close {
     position: absolute;
@@ -290,15 +297,13 @@ video {
     color: red;
 }
 
-#titles{
+#titles {
     font-size: 28px;
     color: rgb(194, 79, 98);
-    margin:1%;
-
-
+    margin: 1%;
 }
 
-.popup-content a{
+.popup-content a {
     color: pink;
 }
 
