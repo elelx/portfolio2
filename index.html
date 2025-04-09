@@ -76,6 +76,22 @@
             <div class="item" style="--position: 6"><img src="image/shrimp.jpg" alt=""></div>
         </div>
     </div>
+
+<!-------------- RECENT WORKS ---------------->
+
+<div class = "container3">  
+    <div class = "title"> Recent Works </div>
+    <div id = "sub-title">  NYPD Train Station + A R211 Train </div>
+</div>
+
+<div class="container4">
+    <div class="image-slider">
+        <span class="arrow prev" onclick="changeSlide(-1)">❮</span>
+        <img id="slider" src="2025Work/Ps1.png" alt="Slideshow Image">
+        <span class="arrow next" onclick="changeSlide(1)">❯</span>
+    </div>
+</div>
+
 <!---------------------about-------------------->
 <div id="about">
     <div class="container">
@@ -245,31 +261,7 @@
     </div>
 </div>
 
-<script>
-    function opentab(event, tabname) {
-        const tablinks = document.querySelectorAll(".tab-links");
-        const tabcontents = document.querySelectorAll(".tab-contents");
-
-        tablinks.forEach(link => link.classList.remove("active-link"));
-        tabcontents.forEach(content => content.classList.remove("active-tab"));
-
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-
-    <script>
-        window.addEventListener("scroll", function() {
-            const textElements = document.querySelectorAll(".text-below");
-            textElements.forEach(element => {
-                const rect = element.getBoundingClientRect();
-                if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-                    element.classList.add("visible");
-                }
-            });
-        });
-    </script>
-
+<script src = "index.js"></script>
    
 </body>
 </html>
