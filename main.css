@@ -212,21 +212,23 @@ margin-bottom:-30px
 #name, #game {
     color: rgb(255, 195, 208);
 }
+/* 
+.diver{
 
-
+} */
 
 .slider {
     width: 100%;
     height: var(--height);
     overflow: hidden;
     position: relative;
-    mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 30%, #000 90%, transparent);
 }
 
 .slider .list {
     display: flex;
     width: calc(var(--width) * var(--quantity) * 2); /* Account for duplicates */
-    animation: autoRun 10s linear infinite; /* Adjust speed as needed */
+    animation: autoRun 5s linear infinite; /* Adjust speed as needed */
 }
 
 .slider .item {
@@ -542,7 +544,7 @@ a {
 .submenu {
     display: none;
     position: absolute; /* Position relative to the parent */
-    background-color: #f2aeaed7;
+    background-color: #f2aeae;
     list-style: none;
     padding: 12px;
     border-radius: 10px;
